@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onChronometerTick(Chronometer chronometer) {
                 if ((SystemClock.elapsedRealtime() - chronometer.getBase()) >= 10000) {
                     chronometer.setBase(SystemClock.elapsedRealtime());
+
                     Toast.makeText(MainActivity.this, "Bing!", Toast.LENGTH_LONG ).show();
                 }
             }
